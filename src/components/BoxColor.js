@@ -10,10 +10,16 @@ export default function BoxColor(props){
     let g = props.g
     let b = props.b
     
+    function getContrastColor(r, g, b) {
+        const brightness = r * 0.299 + g * 0.587 + b * 0.114;
+      
+        return brightness > 186 ? "#000000" : "#FFFFFF";
+    }
+
     const hexColor = rgbToHex(r,g,b)
      
     return(
-        <div style={{backgroundColor: hexColor}} className="colorBox"> 
+        <div style={{backgroundColor: hexColor, color: getContrastColor(r,g,b)}} className="colorBox"> 
         <span> rgb({props.r}, {props.g}, {props.b})</span>
         <span> {hexColor} </span>
         </div>
