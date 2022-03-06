@@ -7,6 +7,83 @@
   pointer-events: none;
 }
 
+.IdCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: black solid 1.3px;
+  padding: 5px;
+  margin: 2px;
+}
+
+.IdCard>img{
+  margin-right: 20px;
+}
+
+.colorBox{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  border: black solid 1.3px;
+  padding: 5px;
+  margin: 2px;
+}
+
+.IdCard>div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.creditCard{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 250px;
+  border-radius: 20px;
+  padding:10px;
+}
+
+.creditBox{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 200px;
+  border-radius: 20px;
+  padding:10px;
+}
+
+.driverImg{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 70px;
+height:70px;
+border-radius: 50%;
+object-fit: cover;
+margin-right: 10px;
+}
+
+.driverCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 10px;
+  background-color: #425cbb;
+  color: white
+}
+
+.driverCard h2{
+  margin: 0;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
